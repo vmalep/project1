@@ -1,0 +1,329 @@
+:root {
+  --colorbase: #1e90ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.index-body {
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  font-family: roboto, sans-serif;
+}
+
+.city-body {
+  font-family: sans-serif;
+  margin: 0px; /* 50px 8%; */
+  box-sizing: border-box;
+  background-image: url("../img/torre-eiffel-3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+/* header {
+  display: flex;
+  padding: 2´;
+} */
+
+.search-box-div {
+  padding: 1em;
+}
+
+.search-box {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.cards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-decoration: none;
+}
+
+.card-img {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  /* background-image: url("http://placekitten.com/200/300"); */
+  height: 200px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 10px 20px;
+}
+
+.card-body h2 {
+  margin: 10px 0px;
+}
+
+.card-title {
+}
+
+.card-button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightblue;
+  width: 100%;
+}
+
+.about-us-section {
+  padding: 50px;
+}
+
+.individual-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.circular-portrait {
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  overflow: hidden;
+  border-radius: 50%;
+  min-width: 60px;
+  min-height: 60px;
+}
+.circular-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.individual-card-text {
+}
+
+/* css code city-page-Elisa start */
+
+.a-city:link {
+  color: white;
+}
+
+.a-city:visited {
+  color: rgb(40, 212, 40);
+}
+
+.a-city:hover {
+  color: yellow;
+}
+
+.where1 {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.city-h2 {
+  margin-top: 100px;
+  text-align: left;
+  font-size: 50px;
+  /* margin: 50px 5%; */
+}
+
+.event1 {
+  border: 1px black solid;
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 10px 40px;
+  display: flex;
+  opacity: 1;
+  background-color: rgba(11, 102, 90, 0.5);
+  color: white;
+}
+
+.part1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.part2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.buttonevent1 {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 17px;
+  border: 1px black solid;
+}
+
+.buttonevent1:hover {
+  background-color: #1e90ff; /* Green */
+  color: white;
+}
+
+@media screen and (max-width: 360px) {
+  .city-body {
+    margin: 10%;
+  }
+  .event1 {
+    border: 1px black solid;
+    border-radius: 10px;
+    max-width: 200px;
+    padding: 10px 10px;
+    display: flex;
+    opacity: 1;
+  }
+
+  .part1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .part2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .buttonevent1 {
+    margin-bottom: 40px;
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 17px;
+    border: 1px black solid;
+  }
+}
+/* css code city-page-Elisa end*/
+
+/*body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: clamp(50%, 100%, 150%);
+  background-size: cover;
+}
+
+/********Main settings & Avatar**********/
+
+#navBar-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(62, 70, 61, 0.5);
+  max-height: clamp(45px, 75px, 100px);
+  width: 100%;
+  position: fixed;
+}
+.nav-header {
+  margin-top: -100px;
+
+  width: 100%;
+}
+
+#avatar {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid 3px rgb(167, 157, 157);
+  align-self: center;
+}
+.brandName {
+  align-self: center;
+}
+.brandName a {
+  font-size: 250%;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(243, 236, 236);
+  font-weight: bold;
+}
+
+nav {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+}
+/*****************************************/
+
+/************Button*********************/
+#menu-btn {
+  font-size: clamp(50px, 100%, 350%);
+  height: 55px;
+  background-color: rgba(167, 157, 157, 0.4);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+/**************************************/
+
+/*************Menu & toggle settings************/
+ul {
+  margin-top: 0;
+  padding: 30px;
+}
+
+.menu-off {
+  visibility: hidden;
+  display: flex;
+  flex-flow: nowrap column;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 10, 0.5);
+  position: relative;
+  text-align: center;
+  margin-left: -230px;
+  height: auto;
+}
+
+.menu-on {
+  visibility: visible;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 10px;
+}
+
+.nav-link-header {
+  text-decoration: none;
+  color: rgb(243, 236, 236);
+  margin-right: 20px;
+  font-size: 300%;
+}
+
+.nav-link-header:hover {
+  color: rgb(243, 161, 9);
+}
+/**************************************/
+
+footer {
+  background-color: rgba(62, 70, 61, 0.5);
+  width: 100%;
+  float: right;
+}
